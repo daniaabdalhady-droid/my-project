@@ -78,22 +78,8 @@ function Home() {
       }}
     >
 
-      {/* Top navigation */}
-      <nav className="top-nav">
-  <a href="/" className="nav-link">Home</a>
-
-  <div className="cafe-logo">
-    <span className="logo-icon">♨</span>
-    <h1>Sweet Bites</h1>
-    <p>Discover · Cook · Enjoy ♡</p>
-  </div>
-
-  <div className="nav-links">
-  <a href="/login" className="nav-link">Login</a>
-  <a href="/register" className="nav-link">Register</a>
-  <a href="/about" className="nav-link">About Us</a>
-</div>
-</nav>
+      
+  
 
       {/* Search bar */}
       <div className="search-container">
