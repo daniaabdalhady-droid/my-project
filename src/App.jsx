@@ -1,10 +1,12 @@
 import Home from "./pages/Home";
+import Register from "./Register";
 import "./App.css";
 
 function App() {
   return (
 <div>
     <Home />
+    <Register />
     </div>
   );
 }
