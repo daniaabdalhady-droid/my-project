@@ -7,42 +7,42 @@ const recipes = [
     id: 1,
     name: "Cinnamon Rolls",
     category: "Pastries",
-    image: "/images/cinnamon.jpg",
+    image: "/images/WhatsApp Image 2026-11-10 at 10.51.59 PM.jpeg",
     description: "Soft cinnamon rolls with creamy vanilla icing."
   },
   {
     id: 2,
     name: "Chocolate Chip Cookies",
     category: "Cookies",
-    image: "/images/cookies.jpg",
+    image: "/images/WhatsApp Image 2026-11-10 at 10.51.59 PM (1).jpeg",
     description: "Freshly baked cookies filled with chocolate chips."
   },
   {
     id: 3,
     name: "Brownies",
     category: "Chocolate",
-    image: "/images/brownies.jpg",
+    image: "/images/WhatsApp Image 2026-11-10 at 10.51.59 PM (2).jpeg",
     description: "Rich and fudgy chocolate brownies."
   },
   {
     id: 4,
     name: "Cheesecake",
     category: "Cakes",
-    image: "/images/cheesecake.jpg",
+    image: "/images/WhatsApp Image 2026-11-10 at 10.52.00 PM.jpeg",
     description: "Creamy cheesecake with a buttery biscuit base."
   },
   {
     id: 5,
     name: "Donuts",
     category: "Pastries",
-    image: "/images/donuts.jpg",
+    image: "/images/WhatsApp Image 2026-11-10 at 10.52.01 PM.jpeg",
     description: "Soft homemade donuts with delicious toppings."
   },
   {
     id: 6,
     name: "Cupcakes",
     category: "Cakes",
-    image: "/images/cupcakes.jpg",
+    image: "/images/WhatsApp Image 2026-11-10 at 10.52.02 PM.jpeg",
     description: "Cute cupcakes topped with fluffy frosting."
   },
   // أضيفي وصفات جديدة بنفس الطريقة
@@ -50,14 +50,14 @@ const recipes = [
     id: 7,
     name: "Strawberry Cake",
     category: "Cakes",
-    image: "/images/strawberry-cake.jpg",
+    image: "/images/WhatsApp Image 2026-11-10 at 10.51.59 PM (3).jpeg",
     description: "A lovely strawberry cake with fresh cream."
   },
   {
     id: 8,
     name: "Chocolate Tart",
     category: "Chocolate",
-    image: "/images/tart.jpg",
+    image: "/images/WhatsApp Image 2026-11-10 at 10.52.01 PM (1).jpeg",
     description: "A crunchy tart filled with silky chocolate."
   }
 ];
