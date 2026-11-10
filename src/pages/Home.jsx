@@ -74,7 +74,7 @@ function Home() {
     <main
       className="cafe-page"
       style={{
-        backgroundImage: "url('/images/WhatsApp Image 2026-11-09 at 10.22.55 PM.jpeg')"
+        backgroundImage: "url('/images/WhatsApp Image 2026-11-10 at 10.21.59 PM.jpeg')"
       }}
     >
 
