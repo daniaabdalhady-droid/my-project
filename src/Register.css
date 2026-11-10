@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+.register-page {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(
+      rgba(255, 244, 242, 0.25),
+      rgba(255, 244, 242, 0.25)
+    ),
+    url("/reception.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 35px 7%;
+  font-family: Arial, sans-serif;
+}
+
+.register-overlay {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.register-card {
+  width: 420px;
+  max-width: 100%;
+  padding: 35px;
+  background: rgba(255, 249, 246, 0.95);
+  border: 1px solid #f0d5d3;
+  border-radius: 22px;
+  box-shadow: 0 10px 35px rgba(91, 48, 57, 0.18);
+}
+
+.register-card h1 {
+  color: #a85e78;
+  font-size: 27px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #927779;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  display: block;
+  color: #805461;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #e7c5cc;
+  border-radius: 10px;
+  background: #fffdfc;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-group input:focus {
+  border-color: #c77d99;
+  box-shadow: 0 0 5px rgba(199, 125, 153, 0.25);
+}
+
+.register-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  background: #c77d99;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  background: #a85e78;
+}
+
+.login-text {
+  text-align: center;
+  color: #80666b;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.login-text a {
+  color: #b65f83;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-text {
+  text-align: center;
+  color: #c18b9b;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .register-page {
+    justify-content: center;
+    padding: 20px;
+    background-position: center;
+  }
+
+  .register-card {
+    padding: 25px 20px;
+  }
+
+  .register-card h1 {
+    font-size: 23px;
+  }
+}
