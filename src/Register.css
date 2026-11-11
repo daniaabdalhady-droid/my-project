@@ -26,7 +26,13 @@
     padding-top: 35px;
     text-align: center;
     background:
-        radial-gradient(ellipse at top, #fff8f0, transparent 65%);
+        radial-gradient(ellipse at top, #fff8f0, transparent 65%),
+        linear-gradient(
+            180deg,
+            #f8e9d9 0%,
+            #f5e3d3 55%,
+            #ead2bd 100%
+        );
 }
 
 .cafe-title {
