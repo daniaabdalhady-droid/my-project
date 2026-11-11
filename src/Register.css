@@ -224,4 +224,7 @@
     }
 } register-page {
   background: pink !important;
+}.reception-counter{
+  background: red !important;
+  height: 250px !important;
 }
