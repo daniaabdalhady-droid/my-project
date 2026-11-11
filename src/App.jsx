@@ -13,7 +13,7 @@ function App() {
         <Route path="/recipe/:id" element={<RecipePage />} />
         {/* فعّلي هدول لما نعمل الصفحات */}
         {/* <Route path="/login" element={<Login />} /> */}
-        { <Route path="/register" element={<Register />} /> */}
+        { <Route path="/register" element={<Register />} /> }
         {/* <Route path="/about" element={<About />} /> */}
       </Routes>
     </BrowserRouter>
