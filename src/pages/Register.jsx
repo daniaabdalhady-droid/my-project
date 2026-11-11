@@ -1,5 +1,5 @@
 import React from "react";
-import "../Register.css";
+import "./Register.css";
 
 function Register() {
   const handleSubmit = (e) => {
@@ -9,50 +9,59 @@ function Register() {
 
   return (
     <div className="register-page">
-      <div className="register-overlay">
+
+      <div className="reception-scene">
+
+        <div className="cafe-background">
+          <h1 className="cafe-title">Sweet Bites</h1>
+          <p className="cafe-subtitle">
+            Bake • Share • Enjoy
+          </p>
+
+          <div className="cafe-shelves">
+            <div className="shelf-item">♡</div>
+            <div className="shelf-item">♡</div>
+            <div className="shelf-item">♡</div>
+          </div>
+        </div>
+
+        <div className="marinette-area">
+          <div className="marinette-placeholder">
+            Marinette
+          </div>
+        </div>
+
+        <div className="reception-counter">
+          <span>Sweet Bites</span>
+        </div>
+
         <div className="register-card">
 
-          <h1>Welcome to Sugar & Cream</h1>
+          <h1>Create Account</h1>
           <p className="subtitle">
-            Create your account and enjoy our sweet world!
+            Join our sweet world!
           </p>
 
           <form onSubmit={handleSubmit}>
 
             <div className="input-group">
               <label>Full Name</label>
-              <input
-                type="text"
-                placeholder="Enter your full name"
-                required
-              />
+              <input type="text" placeholder="Enter your full name" required />
             </div>
 
             <div className="input-group">
               <label>Email Address</label>
-              <input
-                type="email"
-                placeholder="Enter your email"
-                required
-              />
+              <input type="email" placeholder="Enter your email" required />
             </div>
 
             <div className="input-group">
               <label>Password</label>
-              <input
-                type="password"
-                placeholder="Create a password"
-                required
-              />
+              <input type="password" placeholder="Create a password" required />
             </div>
 
             <div className="input-group">
               <label>Confirm Password</label>
-              <input
-                type="password"
-                placeholder="Confirm your password"
-                required
-              />
+              <input type="password" placeholder="Confirm your password" required />
             </div>
 
             <button type="submit" className="register-btn">
@@ -66,11 +75,8 @@ function Register() {
             <a href="/login"> Login</a>
           </p>
 
-          <p className="footer-text">
-            Made with love & sugar ♡
-          </p>
-
         </div>
+
       </div>
     </div>
   );
