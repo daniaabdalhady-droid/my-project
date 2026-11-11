@@ -124,4 +124,4 @@ export const recipes = [
       "Dip in melted chocolate and add your toppings."
     ]
   },
-  
+];
