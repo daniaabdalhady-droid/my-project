@@ -3,7 +3,7 @@
 }
 
 .register-page {
-  min-height: 130vh;
+  min-height: calc(100vh - 100px);
   background-image:
     linear-gradient(
       rgba(255, 244, 242, 0.25),
