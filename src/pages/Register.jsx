@@ -32,8 +32,15 @@ function Register() {
         </div>
 
         <div className="reception-counter">
-          <span>Sweet Bites</span>
-        </div>
+    <div className="counter-logo">
+        <span>Sweet Bites</span>
+        <small>BAKE • SHARE • ENJOY</small>
+    </div>
+
+    <div className="counter-decoration">
+        ♡
+    </div>
+</div>
 
         <div className="register-card">
 

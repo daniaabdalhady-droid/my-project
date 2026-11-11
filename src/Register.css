@@ -223,4 +223,22 @@
     .cafe-shelves {
         width: 85%;
     }
-} 
+} .counter-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.counter-logo small {
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+.counter-decoration {
+    position: absolute;
+    right: 8%;
+    font-size: 35px;
+    color: #fff4e9;
+}
