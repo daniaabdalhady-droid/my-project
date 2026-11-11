@@ -223,4 +223,8 @@
     .cafe-shelves {
         width: 85%;
     }
-} 
+} .reception-counter {
+    background: red !important;
+    height: 210px !important;
+    z-index: 10 !important;
+}
