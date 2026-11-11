@@ -94,13 +94,13 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 180px;
+    height: 210px;
     background: linear-gradient(
-        180deg,
-        #ead4c5,
+        135deg,
+        #e8cbbb,
         #c99f8d
     );
-    border-top: 10px solid #f8eee5;
+    border-top: 10px solid #fff5ec;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,11 +109,12 @@
     font-weight: bold;
     letter-spacing: 4px;
     box-shadow: 0 -8px 25px rgba(80, 50, 40, 0.12);
+    z-index: 3;
 }
 
 .reception-counter span {
     background: #fff8ef;
-    padding: 12px 35px;
+    padding: 15px 45px;
     border: 2px solid #d8b8a5;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(80, 50, 40, 0.12);
@@ -222,9 +223,4 @@
     .cafe-shelves {
         width: 85%;
     }
-} register-page {
-  background: pink !important;
-}.reception-counter{
-  background: red !important;
-  height: 250px !important;
-}
+} 
