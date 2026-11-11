@@ -13,10 +13,8 @@ function Register() {
       <div className="reception-scene">
 
         <div className="cafe-background">
-          <h1 className="cafe-title">Sweet Bites</h1>
-          <p className="cafe-subtitle">
-            Bake • Share • Enjoy
-          </p>
+          
+          
 
           <div className="cafe-shelves">
             <div className="shelf-item">♡</div>
@@ -24,7 +22,9 @@ function Register() {
             <div className="shelf-item">♡</div>
           </div>
         </div>
-
+<div className="wall-sign">
+    Made with Love ♡
+</div>
         <div className="marinette-area">
           <div className="marinette-placeholder">
             Marinette
