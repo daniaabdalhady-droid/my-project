@@ -27,21 +27,7 @@ function Home() {
         backgroundImage: "url('/images/WhatsApp Image 2026-11-11 at 7.15.53 PM.jpeg')"
       }}
     >
-      <nav className="top-nav">
-        <Link to="/" className="nav-link">Home</Link>
-
-        <div className="cafe-logo">
-          <span className="logo-icon">♨</span>
-          <h1>Sweet Bites</h1>
-          <p>Discover · Cook · Enjoy ♡</p>
-        </div>
-
-        <div className="nav-links">
-          <Link to="/login" className="nav-link">Login</Link>
-          <Link to="/register" className="nav-link">Register</Link>
-          <Link to="/about" className="nav-link">About Us</Link>
-        </div>
-      </nav>
+     
 
       <div className="search-container">
         <div className="search-box">
