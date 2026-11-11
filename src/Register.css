@@ -241,4 +241,39 @@
     right: 8%;
     font-size: 35px;
     color: #fff4e9;
+}/* Wooden counter design */
+.reception-counter {
+    background:
+        repeating-linear-gradient(
+            90deg,
+            transparent 0px,
+            transparent 45px,
+            rgba(100, 65, 45, 0.12) 46px,
+            transparent 49px
+        ),
+        linear-gradient(
+            180deg,
+            #d9b99b,
+            #a87959
+        );
+    border-top: 8px solid #f4e5d5;
+    box-shadow:
+        0 -5px 15px rgba(80, 50, 30, 0.15),
+        inset 0 5px 12px rgba(255,255,255,0.15);
+}
+
+.counter-logo {
+    background: #f8eee2;
+    padding: 12px 35px;
+    border: 2px solid #9b704f;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(60, 35, 20, 0.2);
+}
+
+.counter-logo span {
+    color: #76513b;
+}
+
+.counter-logo small {
+    color: #a17a5d;
 }
