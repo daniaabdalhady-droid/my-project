@@ -303,4 +303,39 @@
     border: 3px solid #9b6b55;
     border-left: none;
     border-radius: 0 10px 10px 0;
+}/* Cafe side curtains */
+.reception-scene::before,
+.reception-scene::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 8%;
+    z-index: 3;
+    pointer-events: none;
+    background:
+        repeating-linear-gradient(
+            90deg,
+            rgba(255,255,255,0.22) 0px,
+            transparent 12px,
+            rgba(145,85,90,0.12) 22px,
+            transparent 32px
+        ),
+        linear-gradient(
+            90deg,
+            #d99da3,
+            #f4d2cf,
+            #c9828d
+        );
+    box-shadow: 0 0 15px rgba(100,50,50,0.12);
+}
+
+.reception-scene::before {
+    left: 0;
+    border-radius: 25px 0 0 0;
+}
+
+.reception-scene::after {
+    right: 0;
+    border-radius: 0 25px 0 0;
 }
