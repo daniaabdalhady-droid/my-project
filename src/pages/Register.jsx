@@ -31,11 +31,25 @@ function Register() {
           </div>
         </div>
 
-        <div className="reception-counter">
+       <div className="reception-counter">
+
     <div className="counter-logo">
         <span>Sweet Bites</span>
         <small>BAKE • SHARE • ENJOY</small>
     </div>
+
+    <div className="counter-cup">
+        <div className="cup-handle"></div>
+    </div>
+
+    <div className="counter-plant">
+        <span>✿</span>
+        <span>✿</span>
+        <span>✿</span>
+        <div className="plant-pot"></div>
+    </div>
+
+</div>
 
     <div className="counter-decoration">
         ♡
@@ -85,8 +99,8 @@ function Register() {
         </div>
 
       </div>
-    </div>
   );
 }
+
 
 export default Register;
