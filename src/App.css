@@ -17,16 +17,15 @@ cafe-page {
 /* =========================
    TOP NAVIGATION
 ========================= */
-
 .top-nav {
-  height: 175px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-
-  padding: 15px 7%;
-  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 45px;
+  gap: 20px;
 }
+
 
 .nav-links {
   display: flex;
