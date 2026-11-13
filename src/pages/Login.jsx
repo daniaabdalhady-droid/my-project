@@ -5,9 +5,7 @@ function Login() {
   return (
     <div className="login-page">
 
-      {/* Welcome Section */}
       <div className="login-welcome">
-
         <div className="welcome-content">
 
           <h1>Sweet Bites</h1>
@@ -21,7 +19,6 @@ function Login() {
             <p>Your sweet corner is waiting for you ♡</p>
           </div>
 
-          {/* 3D Coffee Cup */}
           <div className="cafe-decoration">
 
             <div className="coffee-cup">
@@ -39,9 +36,7 @@ function Login() {
         </div>
       </div>
 
-      {/* Login Form Section */}
       <div className="login-form-section">
-
         <div className="login-card">
 
           <h2>Login</h2>
@@ -68,9 +63,7 @@ function Login() {
               <a href="#">Forgot Password?</a>
             </div>
 
-            <button type="button">
-              LOGIN
-            </button>
+            <button type="button">LOGIN</button>
 
           </form>
 

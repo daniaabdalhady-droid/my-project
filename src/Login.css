@@ -5,52 +5,34 @@
 .login-page {
   min-height: 100vh;
   display: flex;
-  background: #f4eee8;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+  padding: 55px;
+  background: #fce8ee;
   font-family: Arial, sans-serif;
+  perspective: 1200px;
 }
 
-/* 3D Cafe Welcome */
+/* Welcome Area */
 
 .login-welcome {
   width: 50%;
-  min-height: 100vh;
-  position: relative;
-  overflow: hidden;
+  min-height: 570px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
-  padding: 40px;
-
-  background:
-    radial-gradient(circle at 50% 35%,
-      rgba(255, 235, 210, 0.3),
-      transparent 35%),
-    linear-gradient(145deg, #987b70, #60483f 75%);
-}
-
-.login-welcome::before {
-  content: "";
-  position: absolute;
-  width: 420px;
-  height: 420px;
-  border-radius: 50%;
-  background: rgba(255, 238, 218, 0.08);
-  top: -150px;
-  left: -120px;
-  box-shadow: 0 20px 80px rgba(30, 15, 10, 0.2);
-}
-
-.login-welcome::after {
-  content: "";
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  background: rgba(255, 220, 195, 0.08);
-  bottom: -150px;
-  right: -100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 35px;
+  color: #704c58;
+  background: linear-gradient(145deg, #fff5f7, #efbdcc);
+  box-shadow:
+    18px 20px 35px rgba(145, 91, 109, 0.2),
+    inset 5px 5px 12px #fff,
+    inset -5px -5px 12px rgba(190, 124, 145, 0.2);
+  transform: rotateY(3deg);
 }
 
 .welcome-content {
@@ -59,10 +41,9 @@
 }
 
 .welcome-content h1 {
-  font-size: 50px;
+  font-size: 49px;
   letter-spacing: 2px;
-  text-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
-  margin-bottom: 5px;
+  text-shadow: 3px 4px 2px rgba(112, 76, 88, 0.2);
 }
 
 .welcome-tagline {
@@ -71,105 +52,105 @@
 }
 
 .welcome-message {
-  margin-top: 85px;
+  margin-top: 75px;
 }
 
 .welcome-message h2 {
-  font-size: 38px;
-  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 36px;
+  text-shadow: 2px 3px 3px rgba(112, 76, 88, 0.2);
 }
 
 .welcome-message p {
-  color: #f4e5dc;
+  color: #956b7b;
 }
 
-/* 3D Coffee Cup */
+/* Coffee Decoration */
 
 .cafe-decoration {
-  margin: 65px auto 0;
+  width: 220px;
+  height: 150px;
   position: relative;
-  width: 180px;
-  height: 110px;
+  margin: 55px auto 0;
+  perspective: 500px;
 }
 
 .coffee-cup {
-  width: 90px;
-  height: 65px;
   position: absolute;
-  left: 40px;
-  top: 15px;
-  border-radius: 8px 8px 28px 28px;
-  background: linear-gradient(100deg, #fff8ed, #d8c4b5);
+  width: 105px;
+  height: 90px;
+  left: 55px;
+  top: 20px;
+  border-radius: 10px 10px 35px 35px;
+  background: linear-gradient(100deg, #fff, #e9cbd2 65%, #c99eaa);
   box-shadow:
-    inset -10px 0 15px rgba(80, 50, 35, 0.15),
-    0 15px 20px rgba(25, 12, 8, 0.3);
+    12px 15px 18px rgba(95, 55, 68, 0.25),
+    inset 7px 0 12px white;
+  transform: rotateX(-8deg);
 }
 
 .cup-handle {
   position: absolute;
-  width: 35px;
-  height: 38px;
-  border: 9px solid #e5d2c3;
+  width: 42px;
+  height: 48px;
+  border: 10px solid #e8cbd3;
   border-radius: 50%;
-  right: -25px;
-  top: 10px;
+  right: -30px;
+  top: 15px;
   z-index: -1;
 }
 
 .coffee {
   position: absolute;
-  width: 78px;
-  height: 12px;
+  width: 91px;
+  height: 16px;
+  top: -5px;
+  left: 7px;
   border-radius: 50%;
-  background: #59372b;
-  top: -4px;
-  left: 6px;
-  box-shadow: inset 0 3px 5px rgba(255,255,255,0.2);
+  background: linear-gradient(#6d4539, #38231e);
+  box-shadow: inset 0 3px 5px #b88a72;
 }
 
 .coffee-beans {
   position: absolute;
   width: 100%;
+  bottom: -10px;
   display: flex;
   justify-content: space-between;
-  top: 75px;
-  font-size: 25px;
+  font-size: 34px;
+  filter: drop-shadow(4px 6px 3px rgba(80, 40, 40, 0.2));
 }
 
-/* Login Form */
+/* Login Card */
 
 .login-form-section {
-  width: 50%;
-  min-height: 100vh;
+  width: 42%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 35px;
-  background:
-    radial-gradient(circle at top right, #fff8f1, transparent 45%),
-    #f4eee8;
+  align-items: center;
 }
 
 .login-card {
   width: 100%;
-  max-width: 420px;
-  padding: 45px 40px;
-  border-radius: 22px;
-  background: linear-gradient(145deg, #ffffff, #f9f2ec);
+  max-width: 430px;
+  padding: 45px;
+  border-radius: 28px;
+  background: linear-gradient(145deg, #fff, #fff0f4);
+  border: 1px solid white;
   box-shadow:
-    12px 15px 30px rgba(91, 65, 51, 0.13),
-    -5px -5px 15px rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(255,255,255,0.8);
+    16px 18px 30px rgba(145, 91, 109, 0.22),
+    inset 3px 3px 8px white;
+  transform: rotateY(-3deg);
 }
 
 .login-card h2 {
-  color: #60483f;
-  font-size: 36px;
+  color: #805666;
+  font-size: 38px;
   margin-bottom: 8px;
+  text-shadow: 2px 3px 3px rgba(128, 86, 102, 0.15);
 }
 
 .login-subtitle {
-  color: #a18a7d;
+  color: #b18b99;
   margin-bottom: 35px;
 }
 
@@ -179,24 +160,25 @@
 }
 
 .login-card label {
-  color: #60483f;
+  color: #805666;
   margin-bottom: 9px;
   font-size: 14px;
 }
 
 .login-card input {
   padding: 15px;
-  border: 1px solid #eadbd0;
-  border-radius: 11px;
+  border: 1px solid #f0d3dd;
+  border-radius: 12px;
   margin-bottom: 22px;
   outline: none;
-  background: #fffdfb;
-  box-shadow: inset 2px 3px 6px rgba(90, 60, 40, 0.05);
+  background: #fffafb;
+  box-shadow:
+    inset 3px 4px 7px rgba(145, 91, 109, 0.09),
+    2px 3px 5px rgba(145, 91, 109, 0.08);
 }
 
 .login-card input:focus {
-  border-color: #b58d79;
-  box-shadow: 0 0 0 3px rgba(181, 141, 121, 0.12);
+  border-color: #d59bad;
 }
 
 .forgot-password {
@@ -206,44 +188,52 @@
 
 .forgot-password a,
 .signup-text a {
-  color: #a16f5c;
+  color: #b06f87;
   text-decoration: none;
   font-weight: bold;
 }
 
 .login-card button {
   padding: 16px;
-  background: linear-gradient(145deg, #9b7867, #725345);
-  color: white;
   border: none;
-  border-radius: 11px;
+  border-radius: 13px;
+  background: linear-gradient(145deg, #e9aabd, #c77f98);
+  color: white;
   font-size: 15px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   cursor: pointer;
-  box-shadow: 0 6px 0 #543b31, 0 10px 18px rgba(70, 40, 25, 0.2);
+  box-shadow:
+    0 7px 0 #a65f78,
+    0 12px 18px rgba(145, 91, 109, 0.25);
   transition: 0.2s;
 }
 
 .login-card button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 0 #543b31, 0 13px 20px rgba(70, 40, 25, 0.2);
+  transform: translateY(-3px);
+  box-shadow:
+    0 10px 0 #a65f78,
+    0 15px 20px rgba(145, 91, 109, 0.25);
 }
 
 .login-card button:active {
-  transform: translateY(4px);
-  box-shadow: 0 2px 0 #543b31;
+  transform: translateY(5px);
+  box-shadow: 0 2px 0 #a65f78;
 }
 
 .signup-text {
   text-align: center;
-  color: #8b756a;
+  color: #a98a96;
   font-size: 13px;
   margin-top: 30px;
 }
 
+/* Responsive */
+
 @media (max-width: 768px) {
   .login-page {
     flex-direction: column;
+    padding: 25px 15px;
+    gap: 30px;
   }
 
   .login-welcome,
@@ -252,19 +242,12 @@
   }
 
   .login-welcome {
-    min-height: 360px;
-  }
-
-  .welcome-message {
-    margin-top: 35px;
-  }
-
-  .login-form-section {
-    min-height: auto;
-    padding: 35px 18px;
+    min-height: 400px;
+    transform: none;
   }
 
   .login-card {
-    padding: 35px 25px;
+    transform: none;
+    padding: 30px 25px;
   }
 }
