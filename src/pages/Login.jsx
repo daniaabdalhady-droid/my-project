@@ -15,13 +15,17 @@ function Login() {
             <p>Your sweet corner is waiting for you ♡</p>
           </div>
 
-          <div className="welcome-decoration">
-            <span>☕</span>
-            <span>🥐</span>
-            <span>🍰</span>
-          </div>
-        </div>
-      </div>
+         <div className="cafe-decoration">
+  <div className="coffee-cup">
+    <div className="cup-handle"></div>
+    <div className="coffee"></div>
+  </div>
+
+  <div className="coffee-beans">
+    <span>☕</span>
+    <span>🥐</span>
+  </div>
+</div>
 
       <div className="login-form-section">
         <div className="login-card">
