@@ -5,37 +5,53 @@ function Login() {
   return (
     <div className="login-page">
 
+      {/* Welcome Section */}
       <div className="login-welcome">
+
         <div className="welcome-content">
+
           <h1>Sweet Bites</h1>
-          <p className="welcome-tagline">BAKE • SHARE • ENJOY</p>
+
+          <p className="welcome-tagline">
+            BAKE • SHARE • ENJOY
+          </p>
 
           <div className="welcome-message">
             <h2>Welcome Back!</h2>
             <p>Your sweet corner is waiting for you ♡</p>
           </div>
 
-         <div className="cafe-decoration">
-  <div className="coffee-cup">
-    <div className="cup-handle"></div>
-    <div className="coffee"></div>
-  </div>
+          {/* 3D Coffee Cup */}
+          <div className="cafe-decoration">
 
-  <div className="coffee-beans">
-    <span>☕</span>
-    <span>🥐</span>
-  </div>
-</div>
+            <div className="coffee-cup">
+              <div className="cup-handle"></div>
+              <div className="coffee"></div>
+            </div>
 
+            <div className="coffee-beans">
+              <span>☕</span>
+              <span>🥐</span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      {/* Login Form Section */}
       <div className="login-form-section">
+
         <div className="login-card">
 
           <h2>Login</h2>
+
           <p className="login-subtitle">
             Welcome back to Sweet Bites
           </p>
 
           <form>
+
             <label>Email Address</label>
             <input
               type="email"
@@ -52,7 +68,10 @@ function Login() {
               <a href="#">Forgot Password?</a>
             </div>
 
-            <button type="button">LOGIN</button>
+            <button type="button">
+              LOGIN
+            </button>
+
           </form>
 
           <p className="signup-text">
