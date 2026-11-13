@@ -5,19 +5,22 @@
 .register-page {
     min-height: 100vh;
     padding: 30px 4%;
-    background: #eae5dc;
+    background: #fce8ee;
     font-family: Arial, sans-serif;
 }
 
-/* Reception */
+/* Reception Scene */
 .reception-scene {
     position: relative;
     width: 100%;
     min-height: 780px;
     overflow: hidden;
     border-radius: 22px;
-    background: #eee6da;
-    box-shadow: 0 15px 40px rgba(60, 45, 30, 0.18);
+    background: #f5dce4;
+    box-shadow:
+        0 25px 45px rgba(145, 91, 109, 0.25),
+        inset 0 2px 5px rgba(255,255,255,0.8);
+    perspective: 1200px;
 }
 
 /* Cafe Background */
@@ -27,13 +30,13 @@
     background:
         radial-gradient(
             ellipse at 50% 0%,
-            #fffaf0,
+            #fff8fa,
             transparent 65%
         ),
         linear-gradient(
             135deg,
-            #eee4d5,
-            #d9c8b1
+            #f9e7ed,
+            #eacbd6
         );
 }
 
@@ -50,9 +53,11 @@
 .ceiling-lights span {
     width: 65px;
     height: 8px;
-    background: #fff3d7;
+    background: #fff3f6;
     border-radius: 0 0 20px 20px;
-    box-shadow: 0 15px 30px rgba(255, 220, 150, 0.6);
+    box-shadow:
+        0 12px 25px rgba(255, 220, 230, 0.9),
+        0 25px 40px rgba(190, 120, 145, 0.2);
 }
 
 /* Cafe Name */
@@ -62,7 +67,8 @@
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    color: #765a43;
+    color: #805666;
+    text-shadow: 2px 4px 5px rgba(128, 86, 102, 0.15);
 }
 
 .cafe-name h2 {
@@ -75,7 +81,7 @@
 .cafe-name p {
     font-size: 11px;
     letter-spacing: 4px;
-    color: #a27d61;
+    color: #b18b99;
 }
 
 /* Shelves */
@@ -93,14 +99,23 @@
     padding: 15px;
     margin-bottom: 55px;
     height: 85px;
-    background: #f8f0e4;
-    border-bottom: 12px solid #977451;
+    background: linear-gradient(
+        145deg,
+        #fff8fa,
+        #f1dce3
+    );
+    border-bottom: 12px solid #b77e93;
     border-radius: 5px;
-    box-shadow: 0 10px 18px rgba(60, 40, 20, 0.15);
+    box-shadow:
+        0 13px 18px rgba(105, 65, 80, 0.2),
+        inset 0 4px 8px white,
+        0 4px 0 #986579;
+    transform: perspective(500px) rotateX(-2deg);
 }
 
 .shelf span {
     font-size: 35px;
+    filter: drop-shadow(3px 5px 3px rgba(80, 45, 55, 0.2));
 }
 
 /* Wall Decoration */
@@ -109,13 +124,20 @@
     top: 280px;
     left: 48%;
     padding: 20px;
-    background: #f6eee1;
-    border: 2px solid #b89b7a;
+    background: linear-gradient(
+        145deg,
+        #fff8fa,
+        #f1dce3
+    );
+    border: 2px solid #d7a9b9;
     border-radius: 8px;
-    color: #98735b;
+    color: #956b7b;
     font-family: Georgia, serif;
     font-size: 18px;
-    box-shadow: 0 8px 15px rgba(60, 40, 20, 0.12);
+    box-shadow:
+        0 12px 20px rgba(105, 65, 80, 0.18),
+        inset 3px 3px 7px white;
+    transform: perspective(400px) rotateY(-3deg);
 }
 
 /* Registration Card */
@@ -127,21 +149,29 @@
     top: 155px;
     right: 7%;
     padding: 30px;
-    background: rgba(255, 251, 244, 0.98);
-    border: 1px solid #e2d2bf;
+    background: linear-gradient(
+        145deg,
+        #ffffff,
+        #fff0f4
+    );
+    border: 1px solid white;
     border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(60, 40, 25, 0.18);
+    box-shadow:
+        16px 18px 30px rgba(145, 91, 109, 0.22),
+        inset 3px 3px 8px white;
+    transform: perspective(1000px) rotateY(-3deg);
 }
 
 .register-card h1 {
-    color: #80634d;
+    color: #805666;
     font-size: 25px;
     text-align: center;
     margin-bottom: 10px;
+    text-shadow: 2px 3px 3px rgba(128, 86, 102, 0.15);
 }
 
 .subtitle {
-    color: #987f69;
+    color: #b18b99;
     text-align: center;
     font-size: 14px;
     margin-bottom: 22px;
@@ -153,7 +183,7 @@
 
 .input-group label {
     display: block;
-    color: #80634d;
+    color: #805666;
     font-weight: bold;
     font-size: 14px;
     margin-bottom: 7px;
@@ -162,16 +192,19 @@
 .input-group input {
     width: 100%;
     padding: 13px;
-    border: 1px solid #ddcbb5;
+    border: 1px solid #f0d3dd;
     border-radius: 9px;
-    background: #fffdf9;
+    background: #fffafb;
     outline: none;
     font-size: 14px;
+    box-shadow:
+        inset 3px 4px 7px rgba(145, 91, 109, 0.09),
+        2px 3px 5px rgba(145, 91, 109, 0.08);
 }
 
 .input-group input:focus {
-    border-color: #aa8065;
-    box-shadow: 0 0 5px rgba(170, 128, 101, 0.3);
+    border-color: #d59bad;
+    box-shadow: 0 0 7px rgba(213, 155, 173, 0.35);
 }
 
 /* Register Button */
@@ -179,7 +212,11 @@
     width: 100%;
     padding: 14px;
     margin-top: 8px;
-    background: #a87966;
+    background: linear-gradient(
+        145deg,
+        #e9aabd,
+        #c77f98
+    );
     color: white;
     border: none;
     border-radius: 9px;
@@ -187,27 +224,33 @@
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
+    box-shadow:
+        0 7px 0 #a65f78,
+        0 12px 18px rgba(145, 91, 109, 0.25);
 }
 
 .register-btn:hover {
-    background: #805d49;
+    transform: translateY(-3px);
+    box-shadow:
+        0 10px 0 #a65f78,
+        0 15px 20px rgba(145, 91, 109, 0.25);
 }
 
 /* Login */
 .login-text {
     text-align: center;
-    color: #806b5b;
+    color: #a98a96;
     font-size: 13px;
     margin-top: 18px;
 }
 
 .login-text a {
-    color: #a87966;
+    color: #b06f87;
     font-weight: bold;
     text-decoration: none;
 }
 
-/* Counter */
+/* Reception Counter */
 .reception-counter {
     position: absolute;
     bottom: 0;
@@ -219,16 +262,18 @@
             90deg,
             transparent 0,
             transparent 55px,
-            rgba(70, 45, 25, 0.12) 56px,
+            rgba(90, 45, 65, 0.12) 56px,
             transparent 60px
         ),
         linear-gradient(
             180deg,
-            #bd9975,
-            #896648
+            #d6a9b9,
+            #a96f86
         );
-    border-top: 10px solid #f7eee2;
-    box-shadow: 0 -8px 20px rgba(50, 35, 20, 0.15);
+    border-top: 10px solid #fff4f7;
+    box-shadow:
+        0 -10px 25px rgba(105, 65, 80, 0.2),
+        inset 0 8px 15px rgba(255,255,255,0.25);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,21 +287,28 @@
     align-items: center;
     gap: 6px;
     padding: 12px 35px;
-    background: #f8efe2;
-    border: 2px solid #8c6949;
+    background: linear-gradient(
+        145deg,
+        #fff8fa,
+        #f1dce3
+    );
+    border: 2px solid #b77e93;
     border-radius: 6px;
-    box-shadow: 0 5px 12px rgba(50, 30, 15, 0.2);
+    box-shadow:
+        0 8px 15px rgba(80, 40, 55, 0.22),
+        inset 3px 3px 7px white;
+    transform: translateY(-5px);
 }
 
 .counter-logo span {
-    color: #76513b;
+    color: #805666;
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 3px;
 }
 
 .counter-logo small {
-    color: #9b795c;
+    color: #b18b99;
     font-size: 10px;
     letter-spacing: 3px;
 }
@@ -268,9 +320,16 @@
     left: 45%;
     width: 40px;
     height: 34px;
-    background: #fff5e8;
-    border: 2px solid #896648;
+    background: linear-gradient(
+        100deg,
+        #ffffff,
+        #ead5dd
+    );
+    border: 2px solid #b77e93;
     border-radius: 4px 4px 12px 12px;
+    box-shadow:
+        5px 7px 9px rgba(80, 40, 55, 0.2),
+        inset 4px 2px 5px white;
 }
 
 .cup-handle {
@@ -279,7 +338,7 @@
     top: 6px;
     width: 13px;
     height: 15px;
-    border: 3px solid #896648;
+    border: 3px solid #b77e93;
     border-left: none;
     border-radius: 0 10px 10px 0;
 }
@@ -293,6 +352,7 @@
     gap: 3px;
     color: #71836a;
     font-size: 27px;
+    filter: drop-shadow(3px 4px 3px rgba(50, 40, 40, 0.2));
 }
 
 .plant-pot {
@@ -301,8 +361,13 @@
     height: 28px;
     bottom: -25px;
     left: 3px;
-    background: #e9d9c6;
+    background: linear-gradient(
+        145deg,
+        #fff0f4,
+        #d9aaba
+    );
     border-radius: 4px 4px 12px 12px;
+    box-shadow: 3px 5px 8px rgba(80, 40, 55, 0.2);
 }
 
 /* Responsive */
