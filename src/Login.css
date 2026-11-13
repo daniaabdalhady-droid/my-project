@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  background: #f8f1eb;
+  font-family: Arial, sans-serif;
+}
+
+/* Welcome Section */
+
+.login-welcome {
+  width: 50%;
+  min-height: 100vh;
+ background: linear-gradient(135deg, #765747, #b8957e);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.welcome-content h1 {
+  font-size: 48px;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+
+.welcome-tagline {
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.welcome-message {
+  margin-top: 100px;
+}
+
+.welcome-message h2 {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.welcome-message p {
+  font-size: 16px;
+}
+
+.welcome-decoration {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 55px;
+  font-size: 38px;
+}
+
+/* Login Form */
+
+.login-form-section {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: #fffdfb;
+  padding: 45px 40px;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(80, 55, 43, 0.10);
+}
+
+.login-card h2 {
+  color: #654638;
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.login-subtitle {
+  color: #9b8174;
+  margin-bottom: 35px;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card label {
+  color: #654638;
+  margin-bottom: 9px;
+  font-size: 14px;
+}
+
+.login-card input {
+  padding: 14px;
+  border: 1px solid #e5d7ce;
+  border-radius: 9px;
+  margin-bottom: 22px;
+  outline: none;
+  font-size: 14px;
+}
+
+.login-card input:focus {
+  border-color: #a77b68;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-top: -10px;
+  margin-bottom: 25px;
+}
+
+.forgot-password a,
+.signup-text a {
+  color: #a16f5c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-card button {
+  padding: 15px;
+  background: #795747;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-card button:hover {
+  background: #5e4033;
+}
+
+.signup-text {
+  text-align: center;
+  color: #8b756a;
+  font-size: 13px;
+  margin-top: 28px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+  }
+
+  .login-welcome {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .welcome-message {
+    margin-top: 35px;
+  }
+
+  .welcome-message h2 {
+    font-size: 28px;
+  }
+
+  .welcome-decoration {
+    margin-top: 25px;
+  }
+
+  .login-form-section {
+    width: 100%;
+    padding: 25px 15px;
+  }
+
+  .login-card {
+    padding: 35px 25px;
+  }
+}
