@@ -1,8 +1,8 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header.jsx';
 import ThreeScene from './components/ThreeScene.jsx';
-import LoginPage from './pages/LoginPage.jsx';
-import RegisterPage from './pages/RegisterPage.jsx';
+import LoginPage from './pages/Login.jsx';
+import RegisterPage from './pages/Register.jsx';
 import HomePage from './pages/HomePage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 
