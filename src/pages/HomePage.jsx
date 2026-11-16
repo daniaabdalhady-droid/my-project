@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import { useMemo, useState } from 'react';
 import recipes from '../data/recipes.js';
 import RecipeCard from '../components/RecipeCard.jsx';
@@ -80,10 +80,10 @@ export default function HomePage() {
     </main>
   );
 }
-=======
+
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { recipes } from "../data/recipes";
+import { recipes } from "../data/recipes.js";
 import "../App.css";
 
 function Home() {
@@ -250,5 +250,4 @@ function Home() {
   );
 }
 
-export default Home;
->>>>>>> 5615c084278431165ae0f638a441c7096a582028
+
