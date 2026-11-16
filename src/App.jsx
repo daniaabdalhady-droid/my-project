@@ -4,7 +4,7 @@ import ThreeScene from './components/ThreeScene.jsx';
 import LoginPage from './pages/Login.jsx';
 import RegisterPage from './pages/Register.jsx';
 import HomePage from './pages/HomePage.jsx';
-import AboutPage from './pages/AboutPage.jsx';
+import AboutPage from './pages/About.jsx';
 
 export default function App() {
   return (
