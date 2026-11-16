@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { recipes } from "../data/recipes.js";
+import  recipes  from "../data/recipes.js";
 import "../styles.css";
 
 export default function HomePage() {
