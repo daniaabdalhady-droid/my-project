@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Home from "./pages/Home";
 import "./App.css";
 
@@ -8,3 +9,29 @@ function App() {
 }
 
 export default App;
+=======
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import RecipePage from "./pages/RecipePage";
+ import Login from "./pages/Login";
+ import Register from "./pages/Register";
+// import About from "./pages/About";
+import Navbar from "./components/Navbar";
+function App() {
+  return (
+    <BrowserRouter>
+    <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/recipe/:id" element={<RecipePage />} />
+        {/* فعّلي هدول لما نعمل الصفحات */}
+        { <Route path="/login" element={<Login />} />}
+        { <Route path="/register" element={<Register />} /> }
+        {/* <Route path="/about" element={<About />} />*/ }
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
+>>>>>>> 5615c084278431165ae0f638a441c7096a582028

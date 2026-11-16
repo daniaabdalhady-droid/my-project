@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+}
+
+.register-page {
+    min-height: 100vh;
+    padding: 30px 4%;
+    background: #fce8ee;
+    font-family: Arial, sans-serif;
+}
+
+/* Reception Scene */
+.reception-scene {
+    position: relative;
+    width: 100%;
+    min-height: 780px;
+    overflow: hidden;
+    border-radius: 22px;
+    background: #f5dce4;
+    box-shadow:
+        0 25px 45px rgba(145, 91, 109, 0.25),
+        inset 0 2px 5px rgba(255,255,255,0.8);
+    perspective: 1200px;
+}
+
+/* Cafe Background */
+.cafe-background {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(
+            ellipse at 50% 0%,
+            #fff8fa,
+            transparent 65%
+        ),
+        linear-gradient(
+            135deg,
+            #f9e7ed,
+            #eacbd6
+        );
+}
+
+/* Ceiling Lights */
+.ceiling-lights {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ceiling-lights span {
+    width: 65px;
+    height: 8px;
+    background: #fff3f6;
+    border-radius: 0 0 20px 20px;
+    box-shadow:
+        0 12px 25px rgba(255, 220, 230, 0.9),
+        0 25px 40px rgba(190, 120, 145, 0.2);
+}
+
+/* Cafe Name */
+.cafe-name {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #805666;
+    text-shadow: 2px 4px 5px rgba(128, 86, 102, 0.15);
+}
+
+.cafe-name h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.cafe-name p {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #b18b99;
+}
+
+/* Shelves */
+.cafe-shelves {
+    position: absolute;
+    top: 210px;
+    left: 5%;
+    width: 38%;
+}
+
+.shelf {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 55px;
+    height: 85px;
+    background: linear-gradient(
+        145deg,
+        #fff8fa,
+        #f1dce3
+    );
+    border-bottom: 12px solid #b77e93;
+    border-radius: 5px;
+    box-shadow:
+        0 13px 18px rgba(105, 65, 80, 0.2),
+        inset 0 4px 8px white,
+        0 4px 0 #986579;
+    transform: perspective(500px) rotateX(-2deg);
+}
+
+.shelf span {
+    font-size: 35px;
+    filter: drop-shadow(3px 5px 3px rgba(80, 45, 55, 0.2));
+}
+
+/* Wall Decoration */
+.wall-decoration {
+    position: absolute;
+    top: 280px;
+    left: 48%;
+    padding: 20px;
+    background: linear-gradient(
+        145deg,
+        #fff8fa,
+        #f1dce3
+    );
+    border: 2px solid #d7a9b9;
+    border-radius: 8px;
+    color: #956b7b;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    box-shadow:
+        0 12px 20px rgba(105, 65, 80, 0.18),
+        inset 3px 3px 7px white;
+    transform: perspective(400px) rotateY(-3deg);
+}
+
+/* Registration Card */
+.register-card {
+    position: absolute;
+    z-index: 5;
+    width: 370px;
+    max-width: 40%;
+    top: 155px;
+    right: 7%;
+    padding: 30px;
+    background: linear-gradient(
+        145deg,
+        #ffffff,
+        #fff0f4
+    );
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow:
+        16px 18px 30px rgba(145, 91, 109, 0.22),
+        inset 3px 3px 8px white;
+    transform: perspective(1000px) rotateY(-3deg);
+}
+
+.register-card h1 {
+    color: #805666;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 3px 3px rgba(128, 86, 102, 0.15);
+}
+
+.subtitle {
+    color: #b18b99;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    color: #805666;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #f0d3dd;
+    border-radius: 9px;
+    background: #fffafb;
+    outline: none;
+    font-size: 14px;
+    box-shadow:
+        inset 3px 4px 7px rgba(145, 91, 109, 0.09),
+        2px 3px 5px rgba(145, 91, 109, 0.08);
+}
+
+.input-group input:focus {
+    border-color: #d59bad;
+    box-shadow: 0 0 7px rgba(213, 155, 173, 0.35);
+}
+
+/* Register Button */
+.register-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    background: linear-gradient(
+        145deg,
+        #e9aabd,
+        #c77f98
+    );
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow:
+        0 7px 0 #a65f78,
+        0 12px 18px rgba(145, 91, 109, 0.25);
+}
+
+.register-btn:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 10px 0 #a65f78,
+        0 15px 20px rgba(145, 91, 109, 0.25);
+}
+
+/* Login */
+.login-text {
+    text-align: center;
+    color: #a98a96;
+    font-size: 13px;
+    margin-top: 18px;
+}
+
+.login-text a {
+    color: #b06f87;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Reception Counter */
+.reception-counter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 230px;
+    background:
+        repeating-linear-gradient(
+            90deg,
+            transparent 0,
+            transparent 55px,
+            rgba(90, 45, 65, 0.12) 56px,
+            transparent 60px
+        ),
+        linear-gradient(
+            180deg,
+            #d6a9b9,
+            #a96f86
+        );
+    border-top: 10px solid #fff4f7;
+    box-shadow:
+        0 -10px 25px rgba(105, 65, 80, 0.2),
+        inset 0 8px 15px rgba(255,255,255,0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+
+/* Counter Logo */
+.counter-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 12px 35px;
+    background: linear-gradient(
+        145deg,
+        #fff8fa,
+        #f1dce3
+    );
+    border: 2px solid #b77e93;
+    border-radius: 6px;
+    box-shadow:
+        0 8px 15px rgba(80, 40, 55, 0.22),
+        inset 3px 3px 7px white;
+    transform: translateY(-5px);
+}
+
+.counter-logo span {
+    color: #805666;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.counter-logo small {
+    color: #b18b99;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+/* Cup */
+.counter-cup {
+    position: absolute;
+    bottom: 30px;
+    left: 45%;
+    width: 40px;
+    height: 34px;
+    background: linear-gradient(
+        100deg,
+        #ffffff,
+        #ead5dd
+    );
+    border: 2px solid #b77e93;
+    border-radius: 4px 4px 12px 12px;
+    box-shadow:
+        5px 7px 9px rgba(80, 40, 55, 0.2),
+        inset 4px 2px 5px white;
+}
+
+.cup-handle {
+    position: absolute;
+    right: -13px;
+    top: 6px;
+    width: 13px;
+    height: 15px;
+    border: 3px solid #b77e93;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Plant */
+.counter-plant {
+    position: absolute;
+    right: 12%;
+    bottom: 30px;
+    display: flex;
+    gap: 3px;
+    color: #71836a;
+    font-size: 27px;
+    filter: drop-shadow(3px 4px 3px rgba(50, 40, 40, 0.2));
+}
+
+.plant-pot {
+    position: absolute;
+    width: 45px;
+    height: 28px;
+    bottom: -25px;
+    left: 3px;
+    background: linear-gradient(
+        145deg,
+        #fff0f4,
+        #d9aaba
+    );
+    border-radius: 4px 4px 12px 12px;
+    box-shadow: 3px 5px 8px rgba(80, 40, 55, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .reception-scene {
+        min-height: 1100px;
+    }
+
+    .register-card {
+        width: 90%;
+        max-width: 370px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        top: 170px;
+    }
+
+    .cafe-shelves {
+        width: 85%;
+        top: 620px;
+    }
+
+    .wall-decoration {
+        display: none;
+    }
+
+    .cafe-name {
+        top: 50px;
+    }
+}
