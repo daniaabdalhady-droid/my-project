@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { recipes } from "../data/recipes.js";
-import "../App.css";
+import "../styles.css";
 
 export default function HomePage() {
   const [search, setSearch] = useState("");
