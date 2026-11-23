@@ -14,9 +14,23 @@ export default function AboutPage() {
           an opportunity to create something beautiful and share happiness.
         </p>
         <div className="about-features">
-          <article className="about-feature"><span>♡</span><h3>Made with Love</h3><p>Every dessert begins with a little love and care.</p></article>
-          <article className="about-feature"><span>🍰</span><h3>Sweet Recipes</h3><p>Discover different desserts and explore new flavors.</p></article>
-          <article className="about-feature"><span>☕</span><h3>Cozy Moments</h3><p>Your little corner of sweetness and inspiration.</p></article>
+          <article className="about-feature">
+            <img src="/images/do.jpeg" alt="Classic Donuts" className="recipe-image" />
+            <h3>Made with Love</h3>
+            <p>Every dessert begins with a little love and care.</p>
+          </article>
+
+          <article className="about-feature">
+            <img src="/images/stt.jpeg" alt="Strawberry Cake" className="recipe-image" />
+            <h3>Sweet Recipes</h3>
+            <p>Discover different desserts and explore new flavors.</p>
+          </article>
+
+          <article className="about-feature">
+            <img src="/images/pan.jpeg" alt="Mini Pancakes" className="recipe-image" />
+            <h3>Cozy Moments</h3>
+            <p>Your little corner of sweetness and inspiration.</p>
+          </article>
         </div>
         <div className="about-footer">SWEET BITES · BAKED WITH LOVE</div>
       </section>
