@@ -35,7 +35,7 @@ Recipe information is stored locally as mock data during Milestone 1.
 To run the project locally:
 
 1. Clone the GitHub repository:
-    git clone YOUR_GITHUB_REPOSITORY_URL
+    https://github.com/daniaabdalhady-droid/my-project.git
 2. Navigate to the project folder:
     cd my-project
 3. Install the required dependencies:
@@ -48,7 +48,7 @@ To run the project locally:
 
 Dania
 
-* Developed the Main/Home page.
+* Developed the Main/Home page/data.
 * Worked on project documentation.
 
 Doha
