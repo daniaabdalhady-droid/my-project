@@ -1,0 +1,15 @@
+Project Title: Sweet Recipes Website
+
+Student Names and IDs:
+
+1. Dania Abdulhadi - 2437104
+2. Doha - 2440437
+
+Public GitHub Repository URL:
+https://github.com/daniaabdalhady-droid/my-project
+
+Repository Commit Hash:
+ea6424960c445a74e7f539278c84c70f5e3209d7
+
+Deployed Front-End URL:
+https://my-project-o2rd.onrender.com
